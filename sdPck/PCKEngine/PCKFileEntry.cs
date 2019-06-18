@@ -39,7 +39,7 @@ namespace sdPck
 
 		public byte[] Write(int CompressionLevel)
 		{
-			byte[] buffer = new byte[276];
+			byte[] buffer = new byte[288];
 			MemoryStream msb = new MemoryStream(buffer);
 			BinaryWriter bw = new BinaryWriter(msb);
 			bw.Write(Encoding.GetEncoding("GB2312").GetBytes(Path.Replace("/", "\\")));
@@ -51,7 +51,7 @@ namespace sdPck
             bw.BaseStream.Seek(0, SeekOrigin.Begin);
             bw.Close();
             byte[] compressed = PCKZlib.Compress(buffer, CompressionLevel);
-            return compressed.Length < 276 ? compressed : buffer;
+            return compressed.Length < 288 ? compressed : buffer;
 		}
 	}
 }
