@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
         xmlns:lex="http://wpflocalizeextension.codeplex.com"
-        lex:ResxLocalizationProvider.DefaultAssembly="sdPck"
+        lex:ResxLocalizationProvider.DefaultAssembly="sdPck_china"
         lex:ResxLocalizationProvider.DefaultDictionary="Lang"
         lex:LocalizeDictionary.OutputMissingKeys="True"
         mc:Ignorable="d"
